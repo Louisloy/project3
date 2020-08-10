@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+body {
+  background-color: #eeea0a;
+  max-width: 900px;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-header {
+  display: flex;
+  justify-content: right;
+  font-size: 50px;
+}
+.main-header a {
+  text-decoration: none;
+  color: #f80f0f;
+  text-transform: uppercase;
+  justify-content: start;
+  color: #e62828;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  background-color: cyan;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 10px;
+  justify-content: space-around;
+}
+.nav-links .nav-link a {
+  padding: 1.5rem;
+  text-decoration: none;
+}
+.nav-links .nav-link a:hover {
+  background-color: darkorange;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  max-width: 1100px;
+}
+.container-1 .name {
+  font-size: 30px;
+  background-color: honeydew;
+  padding: 50px;
+  margin-right: 50px;
+  width: 800px;
+}
+
+.readme {
+  display: flex;
+  justify-content: right;
+  width: 300px;
+  text-align: justify;
+  padding: 5px;
+  background-color: floralwhite;
+}
+
+#profile {
+  height: 300px;
+  border-radius: 50%;
+  float: right;
+  /* margin-top: 30px;*/
+}
+
+.profilepict {
+  font-size: 2em;
+}
+
+.left-icons {
+  font-size: 1.6em;
+  color: #474545;
+  margin: 0.4em;
+  border: thick solid #474545;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.hobbies {
+  text-align: center;
+}
+
+.container-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: auto;
+  width: 70%;
+}
+
+.ref {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin: auto;
+  width: 70%;
+}
+
+/*# sourceMappingURL=main.css.map */
