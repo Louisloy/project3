@@ -1,41 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
-
-$color:rgb(238, 234, 10);
+@keyframes portfolio{
+	0%{
+    transform: scaleX(o);
+	}
+	17%{
+		transform: scaleX(.18);
+	}
+	46%{
+		transform: scaleX(.83);
+	}
+	100%{
+	transform: scaleX(1);
+	}
+}
+$color:floralwhite;
 body{ 
 	background-color: $color;
 	max-width: 900px;
 	margin: auto;
 	font-family: 'Open Sans', sans-serif;
-}
-.main-header{
-	display: flex;
-	justify-content: right;
-	font-size: 50px;
-	a{
-		text-decoration: none;
-		color: rgb(248, 15, 15);
-		text-transform: uppercase;
-		justify-content: start;
-		color: rgb(230, 40, 40);
-	}
-}
-.nav-links{
-	display: flex;
-	list-style: none;
-	background-color: cyan;
-	padding: 2rem;
-	border-radius: 20px;
-	box-shadow: 10px 10px 10px 10px;
-	justify-content: space-around;
-	.nav-link{
-		a{
-			padding: 1.5rem;
-			text-decoration: none;
+}.homepage{
+	/*background: url(sunrise.jpg);*/
+  .main-header{
+	
+		.nav-links{
+			display: flex;
+			list-style: none;
+			background-color: rgb(136, 9, 68);
+			padding: 1rem;
+			border-radius: 20px;
+			box-shadow: 10px 10px 10px 10px;
+			justify-content: space-around;
+			.nav-link{
+				a{
+					padding: 0.5rem;
+					text-decoration: none;
+					color: rgb(8, 138, 94);
+				}
+				a:hover{
+					background-color:  aliceblue;
+				}
+			}
 		}
-		a:hover{
-			background-color: darkorange;
-		}
-	}
+  }
 }
 .container-1{
 	display: flex;
@@ -46,22 +53,24 @@ body{
 	max-width: 1100px;
 	.name{
 		font-size: 30px; 
-		background-color: honeydew;
+		color: rgb(5, 94, 89);
 		padding: 50px;
-		margin-right:50px ;
-		width: 800px;
-		
+		transform: scale(1);
+		transition: transform 400ms;
+		&:hover{
+		transform: scale(1.15);
+
+		}
 	}
+}.about{
+text-align: center;
 }
 .readme{
 	display: flex;
-	justify-content: right;
-	width: 300px;
 	text-align: justify;
 	padding: 5px;
 	background-color: floralwhite;
-}
-
+ }
 #profile
 {
 	height:300px;
@@ -86,6 +95,37 @@ body{
 {
 	text-align: center;
 }
+.container-2
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin:auto;
+	width: 70%;
+	.education{
+		display: flex;
+		flex-direction: column;
+		width: 600px;
+		&:hover{
+			transform:scaleX(0.5);
+			/*transition: transform 1000ms;*/
+			transform-origin: left 50%;
+			animation: portfolio 1000ms infinite ;
+			}
+		}
+	.experience{
+		display: flex;
+		flex-direction: column;
+		width: 600px;
+		&:hover{
+			transform:scaleX(0);
+			transition: transform 1000ms;
+			transform-origin: right 50%;
+			}
+
+	}
+		
+}
 .container-3
 {
 	display: flex;
@@ -102,4 +142,55 @@ body{
 	align-content: flex-start;
 	margin:auto;
 	width: 70%;
+}
+.lang{
+	height: 200px;
+	}
+.music{
+	height: 200px;
+}
+.draw{
+height: 200px;
+}
+.port{
+	display: flex;
+    flex-direction: row;
+	.port-pic{
+		display: flex;
+		flex-direction: row;
+        margin: 30px;
+		height: 250px;
+		transform: scale(1);
+		transition: transform 400ms;
+		&:hover{
+		transform: scale(1.20);
+		}
+	}
+}
+.folio{
+	display: flex;
+	flex-direction: row;
+	.folio-pic{
+		height: 250px;
+		transform: scale(1);
+		transition: transform 400ms;
+		&:hover{
+		transform: scale(1.20);
+
+		}
+	}
+
+}
+.experience{
+	margin: 10px;
+}
+.elements{
+	display: flex;
+	flex-direction: row;
+
+	
+}
+.response{
+	display: flex;
+flex-direction: row;
 }

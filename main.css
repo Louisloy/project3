@@ -1,39 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+@keyframes portfolio {
+  0% {
+    transform: scaleX(o);
+  }
+  17% {
+    transform: scaleX(0.18);
+  }
+  46% {
+    transform: scaleX(0.83);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 body {
-  background-color: #eeea0a;
+  background-color: floralwhite;
   max-width: 900px;
   margin: auto;
   font-family: "Open Sans", sans-serif;
 }
 
-.main-header {
-  display: flex;
-  justify-content: right;
-  font-size: 50px;
+.homepage {
+  /*background: url(sunrise.jpg);*/
 }
-.main-header a {
-  text-decoration: none;
-  color: #f80f0f;
-  text-transform: uppercase;
-  justify-content: start;
-  color: #e62828;
-}
-
-.nav-links {
+.homepage .main-header .nav-links {
   display: flex;
   list-style: none;
-  background-color: cyan;
-  padding: 2rem;
+  background-color: #880944;
+  padding: 1rem;
   border-radius: 20px;
   box-shadow: 10px 10px 10px 10px;
   justify-content: space-around;
 }
-.nav-links .nav-link a {
-  padding: 1.5rem;
+.homepage .main-header .nav-links .nav-link a {
+  padding: 0.5rem;
   text-decoration: none;
+  color: #088a5e;
 }
-.nav-links .nav-link a:hover {
-  background-color: darkorange;
+.homepage .main-header .nav-links .nav-link a:hover {
+  background-color: aliceblue;
 }
 
 .container-1 {
@@ -46,16 +51,21 @@ body {
 }
 .container-1 .name {
   font-size: 30px;
-  background-color: honeydew;
+  color: #055e59;
   padding: 50px;
-  margin-right: 50px;
-  width: 800px;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.container-1 .name:hover {
+  transform: scale(1.15);
+}
+
+.about {
+  text-align: center;
 }
 
 .readme {
   display: flex;
-  justify-content: right;
-  width: 300px;
   text-align: justify;
   padding: 5px;
   background-color: floralwhite;
@@ -85,6 +95,35 @@ body {
   text-align: center;
 }
 
+.container-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: auto;
+  width: 70%;
+}
+.container-2 .education {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+.container-2 .education:hover {
+  transform: scaleX(0.5);
+  /*transition: transform 1000ms;*/
+  transform-origin: left 50%;
+  animation: portfolio 1000ms infinite;
+}
+.container-2 .experience {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+.container-2 .experience:hover {
+  transform: scaleX(0);
+  transition: transform 1000ms;
+  transform-origin: right 50%;
+}
+
 .container-3 {
   display: flex;
   flex-direction: column;
@@ -100,6 +139,61 @@ body {
   align-content: flex-start;
   margin: auto;
   width: 70%;
+}
+
+.lang {
+  height: 200px;
+}
+
+.music {
+  height: 200px;
+}
+
+.draw {
+  height: 200px;
+}
+
+.port {
+  display: flex;
+  flex-direction: row;
+}
+.port .port-pic {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  height: 250px;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.port .port-pic:hover {
+  transform: scale(1.2);
+}
+
+.folio {
+  display: flex;
+  flex-direction: row;
+}
+.folio .folio-pic {
+  height: 250px;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.folio .folio-pic:hover {
+  transform: scale(1.2);
+}
+
+.experience {
+  margin: 10px;
+}
+
+.elements {
+  display: flex;
+  flex-direction: row;
+}
+
+.response {
+  display: flex;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=main.css.map */
