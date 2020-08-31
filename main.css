@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 @keyframes portfolio {
   0% {
-    transform: scaleX(o);
+    transform: scaleX(0);
   }
   17% {
     transform: scaleX(0.18);
@@ -31,6 +31,12 @@ body {
   border-radius: 20px;
   box-shadow: 10px 10px 10px 10px;
   justify-content: space-around;
+}
+@media all and (max-width: 800px) {
+  .homepage .main-header .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .homepage .main-header .nav-links .nav-link a {
   padding: 0.5rem;
@@ -118,21 +124,14 @@ body {
   display: flex;
   flex-direction: column;
   width: 600px;
-}
-.container-2 .education:hover {
-  transform: scaleX(0.5);
-  /*transition: transform 1000ms;*/
+  animation: portfolio 1000ms;
   transform-origin: left 50%;
-  animation: portfolio 1000ms infinite;
 }
 .container-2 .experience {
   display: flex;
   flex-direction: column;
   width: 600px;
-}
-.container-2 .experience:hover {
-  transform: scaleX(0);
-  transition: transform 1000ms;
+  animation: portfolio 1000ms;
   transform-origin: right 50%;
 }
 
