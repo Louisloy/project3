@@ -51,6 +51,10 @@ body{
 	margin: auto;
 	width: 100%;
 	max-width: 1100px;
+	@media all and (max-width: 800px){
+		flex-direction: column;
+		width: 100%;
+	}
 	.name{
 		font-size: 30px; 
 		color: rgb(5, 94, 89);
@@ -101,7 +105,12 @@ text-align: center;
 	flex-direction: row;
 	justify-content: flex-end;
 	margin:auto;
-	width: 70%;
+	@media all and (max-width: 800px){
+	margin-left: 1em;
+    margin-right: 1em;
+    width: auto;
+	}
+	
 	.education{
 		display: flex;
 		flex-direction: column;
@@ -126,14 +135,14 @@ text-align: center;
 	}
 		
 }
-.container-3
+/*.container-3
 {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	margin:auto;
 	width: 70%;
-}
+}*/
 .ref
 {
 	display: flex;
@@ -154,7 +163,11 @@ height: 200px;
 }
 .port{
 	display: flex;
-    flex-direction: row;
+	flex-direction: row;
+	@media all and (max-width: 800px){
+		flex-direction: column;
+		width: 100%;
+		}
 	.port-pic{
 		display: flex;
 		flex-direction: row;
@@ -170,6 +183,10 @@ height: 200px;
 .folio{
 	display: flex;
 	flex-direction: row;
+	@media all and (max-width: 800px){
+		flex-direction: column;
+		width: 100%;
+		}
 	.folio-pic{
 		height: 250px;
 		transform: scale(1);
@@ -181,6 +198,7 @@ height: 200px;
 	}
 
 }
+
 .experience{
 	margin: 10px;
 }
@@ -193,4 +211,13 @@ height: 200px;
 .response{
 	display: flex;
 flex-direction: row;
+}
+.one
+{
+ width: 140px;
+ margin-right:70px;
+}
+.two
+{
+  width: auto;
 }
