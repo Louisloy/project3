@@ -21,8 +21,12 @@ body{
 	font-family: 'Open Sans', sans-serif;
 }.homepage{
 	/*background: url(sunrise.jpg);*/
+	.btn{
+	text-align: justify;
+	width: auto;
+	background-color: cornflowerblue;
+	}
   .main-header{
-	
 		.nav-links{
 			display: flex;
 			list-style: none;
@@ -36,13 +40,18 @@ body{
 				align-items: center;
 			}
 			.nav-link{
+				transform: scale(1);
+			transition: transform 400ms;
+			&:hover{
+				transform: scale(1.15);
+				}
 				a{
 					padding: 0.5rem;
 					text-decoration: none;
-					color: rgb(8, 138, 94);
+					color: $color;
 				}
 				a:hover{
-					background-color:  aliceblue;
+					background-color:  rgb(4, 12, 97);
 				}
 			}
 		}
@@ -63,14 +72,9 @@ body{
 		font-size: 30px; 
 		color: rgb(5, 94, 89);
 		padding: 50px;
-		transform: scale(1);
-		transition: transform 400ms;
-		&:hover{
-		transform: scale(1.15);
-
-		}
 	}
-}.about{
+}
+.about{
 text-align: center;
 }
 .readme{
@@ -165,17 +169,19 @@ height: 200px;
 		flex-direction: column;
 		width: 100%;
 		}
-	.port-pic{
-		display: flex;
-		flex-direction: row;
-        margin: 30px;
-		height: 250px;
+	.portpic{
 		transform: scale(1);
 		transition: transform 400ms;
 		&:hover{
 		transform: scale(1.20);
 		}
+	.port-pic{
+		display: flex;
+		flex-direction: row;
+        margin: 30px;
+		height: 250px;
 	}
+  }
 }
 .folio{
 	display: flex;
@@ -184,26 +190,24 @@ height: 200px;
 		flex-direction: column;
 		width: 100%;
 		}
-	.folio-pic{
-		height: 250px;
+	.foliopic{
 		transform: scale(1);
 		transition: transform 400ms;
 		&:hover{
 		transform: scale(1.20);
-
+       }
+	
+	.folio-pic{
+		height: 250px;
 		}
 	}
-
 }
-
 .experience{
 	margin: 10px;
 }
 .elements{
 	display: flex;
-	flex-direction: row;
-
-	
+	flex-direction: row;	
 }
 .response{
 	display: flex;
@@ -217,4 +221,42 @@ flex-direction: row;
 .two
 {
   width: auto;
+}
+.intouch{
+	text-align: center;
+	font-size: larger;
+	.socialme{
+		color:rgb(10, 99, 182);
+		font-size: 2em;
+		.github{
+		color:rgb(61, 60, 60);
+		transform: scale(1);
+		transition: transform 400ms;
+		&:hover{
+		transform: scale(1.40);
+       }
+		}
+		.facebook{
+			transform: scale(1);
+		transition: transform 400ms;
+		&:hover{
+		transform: scale(1.40);
+       }
+			
+		}
+		.twitter{
+			transform: scale(1);
+		transition: transform 400ms;
+		&:hover{
+		transform: scale(1.40);
+       }
+	}
+		.skype{
+			transform: scale(1);
+		transition: transform 400ms;
+		&:hover{
+		transform: scale(1.40);
+       }
+	}
+  }
 }

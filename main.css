@@ -23,6 +23,11 @@ body {
 .homepage {
   /*background: url(sunrise.jpg);*/
 }
+.homepage .btn {
+  text-align: justify;
+  width: auto;
+  background-color: cornflowerblue;
+}
 .homepage .main-header .nav-links {
   display: flex;
   list-style: none;
@@ -38,13 +43,20 @@ body {
     align-items: center;
   }
 }
+.homepage .main-header .nav-links .nav-link {
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.homepage .main-header .nav-links .nav-link:hover {
+  transform: scale(1.15);
+}
 .homepage .main-header .nav-links .nav-link a {
   padding: 0.5rem;
   text-decoration: none;
-  color: #088a5e;
+  color: floralwhite;
 }
 .homepage .main-header .nav-links .nav-link a:hover {
-  background-color: aliceblue;
+  background-color: #040c61;
 }
 
 .container-1 {
@@ -65,11 +77,6 @@ body {
   font-size: 30px;
   color: #055e59;
   padding: 50px;
-  transform: scale(1);
-  transition: transform 400ms;
-}
-.container-1 .name:hover {
-  transform: scale(1.15);
 }
 
 .about {
@@ -174,16 +181,18 @@ body {
     width: 100%;
   }
 }
-.port .port-pic {
+.port .portpic {
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.port .portpic:hover {
+  transform: scale(1.2);
+}
+.port .portpic .port-pic {
   display: flex;
   flex-direction: row;
   margin: 30px;
   height: 250px;
-  transform: scale(1);
-  transition: transform 400ms;
-}
-.port .port-pic:hover {
-  transform: scale(1.2);
 }
 
 .folio {
@@ -196,13 +205,15 @@ body {
     width: 100%;
   }
 }
-.folio .folio-pic {
-  height: 250px;
+.folio .foliopic {
   transform: scale(1);
   transition: transform 400ms;
 }
-.folio .folio-pic:hover {
+.folio .foliopic:hover {
   transform: scale(1.2);
+}
+.folio .foliopic .folio-pic {
+  height: 250px;
 }
 
 .experience {
@@ -226,6 +237,44 @@ body {
 
 .two {
   width: auto;
+}
+
+.intouch {
+  text-align: center;
+  font-size: larger;
+}
+.intouch .socialme {
+  color: #0a63b6;
+  font-size: 2em;
+}
+.intouch .socialme .github {
+  color: #3d3c3c;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.intouch .socialme .github:hover {
+  transform: scale(1.4);
+}
+.intouch .socialme .facebook {
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.intouch .socialme .facebook:hover {
+  transform: scale(1.4);
+}
+.intouch .socialme .twitter {
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.intouch .socialme .twitter:hover {
+  transform: scale(1.4);
+}
+.intouch .socialme .skype {
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.intouch .socialme .skype:hover {
+  transform: scale(1.4);
 }
 
 /*# sourceMappingURL=main.css.map */
