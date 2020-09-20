@@ -23,11 +23,6 @@ body {
 .homepage {
   /*background: url(sunrise.jpg);*/
 }
-.homepage .btn {
-  text-align: justify;
-  width: auto;
-  background-color: cornflowerblue;
-}
 .homepage .main-header .nav-links {
   display: flex;
   list-style: none;
@@ -56,7 +51,7 @@ body {
   color: floralwhite;
 }
 .homepage .main-header .nav-links .nav-link a:hover {
-  background-color: #040c61;
+  background-color: #313238;
 }
 
 .container-1 {
@@ -71,12 +66,16 @@ body {
   .container-1 {
     flex-direction: column;
     width: 100%;
+    padding: 25px;
+  }
+  .container-1 .name {
+    padding: 20px !important;
   }
 }
 .container-1 .name {
   font-size: 30px;
-  color: #055e59;
-  padding: 50px;
+  color: #323535;
+  padding: 120px;
 }
 
 .about {
@@ -90,11 +89,10 @@ body {
   background-color: floralwhite;
 }
 
-#profile {
+.profile {
   height: 300px;
   border-radius: 50%;
   float: right;
-  /* margin-top: 30px;*/
 }
 
 .profilepict {
@@ -122,6 +120,8 @@ body {
 }
 @media all and (max-width: 800px) {
   .container-2 {
+    flex-direction: column;
+    text-align: justify;
     margin-left: 1em;
     margin-right: 1em;
     width: auto;
@@ -142,14 +142,6 @@ body {
   transform-origin: right 50%;
 }
 
-/*.container-3
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	margin:auto;
-	width: 70%;
-}*/
 .ref {
   display: flex;
   flex-direction: row;
@@ -171,9 +163,24 @@ body {
   height: 200px;
 }
 
+.portfolio {
+  margin-left: 30px;
+}
+@media all and (max-width: 800px) {
+  .portfolio {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.portintro {
+  text-align: center;
+}
+
 .port {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 @media all and (max-width: 800px) {
   .port {
@@ -192,12 +199,13 @@ body {
   display: flex;
   flex-direction: row;
   margin: 30px;
-  height: 250px;
+  height: 190px;
 }
 
 .folio {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 @media all and (max-width: 800px) {
   .folio {
@@ -213,7 +221,9 @@ body {
   transform: scale(1.2);
 }
 .folio .foliopic .folio-pic {
-  height: 250px;
+  height: 190px;
+  padding: 40px;
+  margin-right: 40px;
 }
 
 .experience {
@@ -275,6 +285,34 @@ body {
 }
 .intouch .socialme .skype:hover {
   transform: scale(1.4);
+}
+
+#cf {
+  position: relative;
+  height: 281px;
+  width: 450px;
+  margin: 0 auto;
+}
+
+#cf img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+@media all and (max-width: 800px) {
+  #cf img {
+    margin-left: 30px;
+  }
+}
+
+#cf img.top:hover {
+  opacity: 0;
+  height: 300px;
+  border-radius: 50%;
+  float: right;
 }
 
 /*# sourceMappingURL=main.css.map */

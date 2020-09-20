@@ -19,13 +19,9 @@ body{
 	max-width: 900px;
 	margin: auto;
 	font-family: 'Open Sans', sans-serif;
-}.homepage{
+}
+.homepage{
 	/*background: url(sunrise.jpg);*/
-	.btn{
-	text-align: justify;
-	width: auto;
-	background-color: cornflowerblue;
-	}
   .main-header{
 		.nav-links{
 			display: flex;
@@ -40,7 +36,7 @@ body{
 				align-items: center;
 			}
 			.nav-link{
-				transform: scale(1);
+			transform: scale(1);
 			transition: transform 400ms;
 			&:hover{
 				transform: scale(1.15);
@@ -51,7 +47,7 @@ body{
 					color: $color;
 				}
 				a:hover{
-					background-color:  rgb(4, 12, 97);
+					background-color:  rgb(49, 50, 56);
 				}
 			}
 		}
@@ -67,11 +63,15 @@ body{
 	@media all and (max-width: 800px){
 		flex-direction: column;
 		width: 100%;
+		padding: 25px;
+		.name{
+			padding: 20px !important;
+		}
 	}
 	.name{
 		font-size: 30px; 
-		color: rgb(5, 94, 89);
-		padding: 50px;
+		color: rgb(50, 53, 53);
+		padding: 120px;
 	}
 }
 .about{
@@ -83,12 +83,11 @@ text-align: center;
 	padding: 5px;
 	background-color: floralwhite;
  }
-#profile
+.profile
 {
 	height:300px;
 	border-radius:50%;
 	float: right;
-	/* margin-top: 30px;*/
 	
 }
 .profilepict{
@@ -114,9 +113,11 @@ text-align: center;
 	justify-content: flex-end;
 	margin:auto;
 	@media all and (max-width: 800px){
-	margin-left: 1em;
-    margin-right: 1em;
-    width: auto;
+	flex-direction: column;
+	text-align: justify;
+	 margin-left: 1em;
+     margin-right: 1em;
+     width: auto;
 	}
 	
 	.education{
@@ -125,6 +126,7 @@ text-align: center;
 		width: 600px;
 		animation: portfolio 1000ms ;
 		transform-origin: left 50%;
+		
 		}
 	.experience{
 		display: flex;
@@ -136,14 +138,6 @@ text-align: center;
 	}
 		
 }
-/*.container-3
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	margin:auto;
-	width: 70%;
-}*/
 .ref
 {
 	display: flex;
@@ -162,9 +156,19 @@ text-align: center;
 .draw{
 height: 200px;
 }
+.portfolio{
+	margin-left: 30px;
+	@media all and (max-width: 800px){
+		flex-direction: column;
+		align-items: center;}
+}
+.portintro{
+	text-align: center;
+}
 .port{
 	display: flex;
 	flex-direction: row;
+	justify-content:space-around;
 	@media all and (max-width: 800px){
 		flex-direction: column;
 		width: 100%;
@@ -179,13 +183,14 @@ height: 200px;
 		display: flex;
 		flex-direction: row;
         margin: 30px;
-		height: 250px;
+		height: 190px;
 	}
   }
 }
 .folio{
 	display: flex;
 	flex-direction: row;
+	justify-content:space-evenly;
 	@media all and (max-width: 800px){
 		flex-direction: column;
 		width: 100%;
@@ -198,7 +203,9 @@ height: 200px;
        }
 	
 	.folio-pic{
-		height: 250px;
+		height: 190px;
+		padding: 40px;
+		margin-right: 40px;
 		}
 	}
 }
@@ -260,3 +267,28 @@ flex-direction: row;
 	}
   }
 }
+#cf {
+	position:relative;
+	height:281px;
+	width:450px;
+	margin:0 auto;
+  }
+  
+  #cf img {
+	position:absolute;
+	left:0;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	@media all and (max-width: 800px){
+		margin-left: 30px;
+	}
+  }
+  
+  #cf img.top:hover {
+	opacity:0;
+	height: 300px;
+  border-radius: 50%;
+  float: right;
+  }
